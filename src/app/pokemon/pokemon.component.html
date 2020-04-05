@@ -1,5 +1,11 @@
-<p>
-  {{ list.name}} is a pokemon
-</p>
+<!--<p>-->
+<!--  {{ list.name}} is a pokemon-->
+<!--</p>-->
 
-<input [(ngModel)]="list.name">
+<!--<input [(ngModel)]="list.name">-->
+<p>List of Pokemons</p>
+<ul>
+  <li *ngFor="let item of list" (click)="GetType(item)">{{ item.name }}</li>
+</ul>
+
+<input [(ngModel)]="type">

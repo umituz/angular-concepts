@@ -10,6 +10,12 @@ export class PokemonComponent implements OnInit {
 
   list = List;
 
+  type = null;
+
+  GetType(item) {
+    this.type = item.type;
+  }
+
   constructor() {
   }
 
