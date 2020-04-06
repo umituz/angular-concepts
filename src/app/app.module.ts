@@ -5,11 +5,13 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {PokemonComponent} from './pokemon/pokemon.component';
 import {FormsModule} from '@angular/forms';
+import { MarvelHeroesComponent } from './marvel-heroes/marvel-heroes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonComponent
+    PokemonComponent,
+    MarvelHeroesComponent
   ],
   imports: [
     BrowserModule,
