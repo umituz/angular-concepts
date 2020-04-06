@@ -9,11 +9,18 @@ export class MarvelHeroesComponent implements OnInit {
 
   inputHero = null;
 
-  hero = 'Iron Man';
+  heroes = ['Iron Man', 'Spider Man', 'Black Panther', 'Ant Man', 'Hulk', 'Captan America'];
 
-  changeHero() {
-    this.hero = this.inputHero;
+  adding = false;
+
+  addHero() {
+    this.heroes.push(this.inputHero);
     this.inputHero = null;
+    this.adding = false;
+  }
+
+  addMore() {
+    this.adding = !this.adding;
   }
 
   constructor() {
