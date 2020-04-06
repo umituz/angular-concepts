@@ -2,7 +2,7 @@
   <div class="col-4 offset-4">
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let hero of heroes" [ngClass]="{ 'text-success' : hero === 'Hulk'}">
-        {{ hero }}
+        {{ hero | uppercase }}
       </li>
       <li class="list-group-item">
         <button class="btn btn-info" (click)="addMore()">Add More</button>
