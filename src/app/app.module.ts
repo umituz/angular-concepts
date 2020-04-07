@@ -8,8 +8,8 @@ import {PokemonComponent} from './pokemon/pokemon.component';
 import {FormsModule} from '@angular/forms';
 import {MarvelHeroesComponent} from './marvel-heroes/marvel-heroes.component';
 import {DcComicsComponent} from './dc-comics/dc-comics.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialModule} from './material.module';
 
 const routeLists: Routes = [
   {path: '', component: DcComicsComponent},
@@ -29,7 +29,7 @@ const routeLists: Routes = [
     FormsModule,
     RouterModule.forRoot(routeLists),
     BrowserAnimationsModule,
-    MatToolbarModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
