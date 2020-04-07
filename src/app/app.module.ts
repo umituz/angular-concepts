@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import {MarvelHeroesComponent} from './marvel-heroes/marvel-heroes.component';
 import {DcComicsComponent} from './dc-comics/dc-comics.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 const routeLists: Routes = [
   {path: '', component: DcComicsComponent},
@@ -27,7 +28,8 @@ const routeLists: Routes = [
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot(routeLists),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
