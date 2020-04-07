@@ -9,7 +9,16 @@ export class FormComponent implements OnInit {
 
   hide = true;
 
+  email = null;
+
+  password = null;;
+
   constructor() { }
+
+  submit(){
+    console.log('clicked');
+  }
+
 
   ngOnInit(): void {
   }

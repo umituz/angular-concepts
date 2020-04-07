@@ -1,21 +1,22 @@
 <div class="example-container">
 
-  <form>
+  <form #myForm="ngForm" (ngSubmit)="submit()">
+
     <mat-form-field appearance="fill">
       <mat-label>Email</mat-label>
-      <input matInput type="text" class="example-right-align" required>
+      <input matInput type="text" class="example-right-align" required name="email" [(ngModel)]="email">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
       <mat-label>Enter your password</mat-label>
-      <input matInput [type]="hide ? 'password' : 'text'" required>
+      <input matInput [type]="hide ? 'password' : 'text'" required name="password" [(ngModel)]="password">
       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
               [attr.aria-pressed]="hide">
         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
     </mat-form-field>
 
-    <button mat-raised-button type="submit" color="accent">Submit</button>
+    <button mat-raised-button type="submit" color="accent" [disabled]="!myForm.form.valid">Submit</button>
 
   </form>
 
