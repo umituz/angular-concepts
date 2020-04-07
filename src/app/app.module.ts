@@ -10,6 +10,7 @@ import {MarvelHeroesComponent} from './marvel-heroes/marvel-heroes.component';
 import {DcComicsComponent} from './dc-comics/dc-comics.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material.module';
+import { FormComponent } from './form/form.component';
 
 const routeLists: Routes = [
   {path: '', component: DcComicsComponent},
@@ -21,7 +22,8 @@ const routeLists: Routes = [
     AppComponent,
     PokemonComponent,
     MarvelHeroesComponent,
-    DcComicsComponent
+    DcComicsComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
