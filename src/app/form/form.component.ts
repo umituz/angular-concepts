@@ -11,7 +11,9 @@ export class FormComponent implements OnInit {
 
   email = null;
 
-  password = null;;
+  password = null;
+
+  waitProgress = false;
 
   constructor() { }
 

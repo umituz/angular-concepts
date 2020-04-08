@@ -1,5 +1,7 @@
 <div class="example-container">
 
+  <mat-spinner style="top:30%;left:45%;position:absolute" *ngIf="waitProgress"></mat-spinner>
+
   <form #myForm="ngForm" (ngSubmit)="submit()">
 
     <mat-form-field appearance="fill">
