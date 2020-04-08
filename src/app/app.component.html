@@ -1,11 +1,7 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Ümit UZ</span>
-    <button mat-button>Theme</button>
-  </mat-toolbar-row>
-</mat-toolbar>
-
-<app-form></app-form>
+<div [ngClass]="toolbar.themeClass">
+  <app-toolbar #toolbar></app-toolbar>
+  <app-form></app-form>
+</div>
 
 <!--<div class="container">-->
 
