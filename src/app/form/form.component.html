@@ -2,7 +2,7 @@
 
   <mat-spinner style="top:30%;left:45%;position:absolute" *ngIf="waitProgress"></mat-spinner>
 
-  <form #myForm="ngForm" (ngSubmit)="submit()">
+  <form #myForm="ngForm" (ngSubmit)="submit(myForm)">
 
     <mat-form-field appearance="fill">
       <mat-label>Email</mat-label>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -15,10 +15,15 @@ export class FormComponent implements OnInit {
 
   waitProgress = false;
 
-  constructor() { }
+  constructor() {
+  }
 
-  submit(){
-    console.log('clicked');
+  submit(form) {
+    this.waitProgress = true;
+    setTimeout(() => {
+      alert(`Email : ${form.value.email} and password : ${form.value.password}`);
+      this.waitProgress = false;
+    }, 1000);
   }
 
 
